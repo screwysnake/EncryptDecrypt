@@ -7,8 +7,8 @@ import sys
 
 
 class TextNormalizer():
-    diacritics = "ĂăÂâÎîȘșȚț"
-    substitute = "AaAaIiSsTt"
+    diacritics = "ĂăÂâÎîȘșȚțŢţ"
+    substitute = "AaAaIiSsTtTt"
 
     def __init__(self, file_name):
         self.file_name = file_name
