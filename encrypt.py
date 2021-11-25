@@ -9,7 +9,7 @@ def main():
     f.close()
 
     j = 0
-    for i, char in enumerate(text):
+    for i in range(len(text)):
         text[i] = chr(ord(text[i]) ^ ord(password[j % len(password)]))
         j += 1
     text = "".join(text)
