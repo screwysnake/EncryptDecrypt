@@ -3,12 +3,14 @@
 Implemented two python scripts: 
 - **encrypt.py**  
            &nbsp;  - encrypts the 'input.txt' file, using xor and a specific password, and writes the result in the 'output' file.  
-           &nbsp;  - time complexity: _O(n)_
+           &nbsp;  - time complexity: _O(n)_ </br>
+           &nbsp; - memory complexity: _O(n)_, where n is the length of the input string
             </br>
             </br>
 - **decrypt.py**  
             &nbsp; - decrypts the aforementioned encrypted 'output' file and writes the result in the 'input_recuperat.txt' file.  
-            &nbsp; - time complexity: _O(n)_
+            &nbsp; - time complexity: _O(n)_ </br>
+            &nbsp; - memory complexity: _O(n)_, where n is the length of the input string
 
 ## Usage
 
