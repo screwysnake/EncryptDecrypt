@@ -1,12 +1,14 @@
 # XOR Encryption / Decryption 
-## About the project
+## About the Project
 Implemented two python scripts: 
 - **encrypt.py**  
-             - encrypts the 'input.txt' file, using xor and a specific password, and writes the result in the 'output' file.
+           &nbsp;  - encrypts the 'input.txt' file, using xor and a specific password, and writes the result in the 'output' file.  
+           &nbsp;  - time complexity: _O(n)_
             </br>
             </br>
-- **decrypt.py**.  
-             - decrypts the aforementioned encrypted 'output' file and writes the result in the 'input_recuperat.txt' file.
+- **decrypt.py**  
+            &nbsp; - decrypts the aforementioned encrypted 'output' file and writes the result in the 'input_recuperat.txt' file.  
+            &nbsp; - time complexity: _O(n)_
 
 ## Usage
 
