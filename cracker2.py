@@ -30,7 +30,7 @@ def main():
         # cautam caracterul de pe pozitia x din parola
         for x in range(lg):
             freq = [0] * 74
-            # facem frecventa caracterului de pe pozitia x in fiecare lista
+            # facem frecventa caracterului de pe pozitia x in fiecare lista de la pozitia x + k * lg, unde 0 <= k <= cnt_ap
             for j in range(x, len(text), lg):
                 for char in valid_chars[j]:
                     freq[alphabet.index(char)] += 1
