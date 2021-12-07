@@ -68,7 +68,7 @@ If the length of the password is not between 10-15 characters and is comparable 
 
 ## Copyright © 2021
 
-@vl4dio4n &nbsp;@cristina-timbur 
+<p><a href="https://github.com/vl4dio4n">@vl4dio4n</a></p> &nbsp;<p><a href="https://github.com/cristina-timbur">@cristina-timbur</a></p>
 
 ***
 *<p align="center"><a>FMI UniBuc 2021</a></p>*
