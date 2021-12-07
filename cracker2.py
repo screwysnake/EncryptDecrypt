@@ -7,7 +7,7 @@ def citire_fisier(nume_fisier):
 
 
 def main():
-    text = citire_fisier("output_adversari")
+    text = citire_fisier("output_ruxi12")
     # valid_chars este o lista de liste
     valid_chars = []
     password_alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
