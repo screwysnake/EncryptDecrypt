@@ -10,15 +10,16 @@ def main():
     text = citire_fisier("output_adversari")
     # valid_chars este o lista de liste
     valid_chars = []
-    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?-,:;'[] " + '"' + "\n"
+    password_alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    text_alphabet = password_alphabet + "-=~!@#$%^&*()_+,./;'[]\<>?:\"}{|" + "\n" + " " + "\t"
     # alfabetul valid pentru input.txt este "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 " + "\n" + '"'
     for cringe_char in text:
         # vc este o lista care contine caracterele valide pentru parola
         vc = []
         # xoram fiecare caracter din alfabetul valid cu caracterul din output
         # adaugam la lista vc doar rezultatele valide
-        for char in alphabet[:-13]:
-            if chr(ord(char) ^ ord(cringe_char)) in alphabet:
+        for char in password_alphabet:
+            if chr(ord(char) ^ ord(cringe_char)) in text_alphabet:
                 vc.append(char)
         valid_chars.append(vc)
 
@@ -30,16 +31,16 @@ def main():
         cnt_ap = len(text) // lg
         # cautam caracterul de pe pozitia x din parola
         for x in range(lg):
-            freq = [0] * 74
+            freq = [0] * len(text_alphabet)
             # facem frecventa caracterului de pe pozitia x in fiecare lista de la pozitia x + k * lg, unde 0 <= k <= cnt_ap
             for j in range(x, len(text), lg):
                 for char in valid_chars[j]:
-                    freq[alphabet.index(char)] += 1
+                    freq[text_alphabet.index(char)] += 1
             ok = 0
             # daca frecventa unui caracter coincide cu cnt_ap atunci acesta este caracterul corect al parolei pe pozitia x 
             for i in range(len(freq)):
                 if freq[i] >= cnt_ap:
-                    password.append(alphabet[i])
+                    password.append(text_alphabet[i])
                     ok = 1
                     break
             if ok == 0:
