@@ -14,7 +14,7 @@ def citire_fisier_binar(nume_fisier):
 def main():
     input_text = citire_fisier("input_adversari.txt")
     output_text = citire_fisier_binar("output_adversari")
-    for lg in range(10, 17):
+    for lg in range(10, 16):
         password = []
         for i in range(0, 2 * lg):
             password.append(chr(ord(input_text[i]) ^ ord(output_text[i])))
