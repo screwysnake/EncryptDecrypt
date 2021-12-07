@@ -57,7 +57,7 @@ The main idea consists of using xor operation between every character from the '
 If the result of this operation is a valid character (i.e. an ascii character), then it is added to a list which contains all the possible characters at a certain position in the password string. Afterwards, the list is appended to a bigger list of lists, which has a number of lists equal to the number of characters from the 'output' file.
 
 After that, for a fixed length of the unknown password, we implemented the following algorithm:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;1. We search for the character at a certain position x in the password. We find the frequency of each character in the lists at </br> position x + k * lg, where 0 <= k <= cnt_ap, lg = fixed length, cnt_ap = required number of occurrences of a character from the password.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;1. We search for the character at a certain position x in the password. We find the frequency of each character in the lists at position x + k * lg, where 0 <= k <= cnt_ap, lg = fixed length, cnt_ap = required number of occurrences of a character from the password.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2. If there is a character whose number of occurrences is equal to cnt_ap, then we add it to the password. If for a certain position in password we do not find any valid character, then the fixed length is not the right one, therefore we continue the search with the next possible length.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_//For more explanation, you can see the code comments_
