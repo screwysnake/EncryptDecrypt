@@ -11,7 +11,7 @@ def main():
     # valid_chars este o lista de liste
     valid_chars = []
     password_alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    text_alphabet = password_alphabet + "-=~!@#$%^&*()_+,./;'[]\<>?:\"}{|" + "\n" + " " + "\t"
+    text_alphabet = password_alphabet + "-=~!@#$%^&*()_+,./;'[]\<>?:\"}{|—" + "\n" + " " + "\t"
     # alfabetul valid
     for cringe_char in text:
         # vc este o lista care contine caracterele valide pentru parola
